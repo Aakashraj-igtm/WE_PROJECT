@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home_styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo1.jpg" alt="CVR_LOGO" id="cvr_logo">
+        <div class="info">
+            <h1>CVR COLLEGE OF ENGINEERING</h1>
+            <h2>In Pursuit Of Excellence</h2>
+            <h3>(An Autonomous Institution, NAAC 'A' Grade)</h3>
+        </div>
+        
+    </div>
+    <div class="container">
+        <input type="button" id="btn1" value="ADMIN LOGIN">
+        <br><br><br>
+        <input type="button" id="btn2" value="STUDENT LOGIN">
+        <br><br><br>
+        <input type="button" id="btn3" value="FACULTY LOGIN">
+        <br>
+        <p id="register" style="font-size:20px;text-align: right;cursor: pointer;color: brown;">Register as faculty</p>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("btn1").onclick = function () {
+            location.href = "admin.html";
+        };
+        document.getElementById("btn2").onclick = function () {
+            location.href = "student.php";
+        };
+        document.getElementById("btn3").onclick = function () {
+            location.href = "faculty_login.php";
+        };
+        document.getElementById("register").onclick = function () {
+            location.href = "register.php";
+        };
+    </script>
+</body>
+</html>
